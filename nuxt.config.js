@@ -64,7 +64,7 @@ export default {
   },
 
   axios: {
-    baseURL: 'http://localhost:5000/api', // Used as fallback if no runtime config is provided
+    baseURL: 'http://localhost:5000/api' // Used as fallback if no runtime config is provided
   },
 
   publicRuntimeConfig: {
@@ -77,5 +77,5 @@ export default {
     axios: {
       baseURL: process.env.BASE_URL
     }
-  },
+  }
 }
