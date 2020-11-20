@@ -1,23 +1,23 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
-    es2021: true,
+    node: true
+  },
+  parserOptions: {
+    parser: 'babel-eslint'
   },
   extends: [
-    'plugin:vue/essential',
-    'airbnb-base',
+    '@nuxtjs',
+    'plugin:nuxt/recommended'
   ],
-  parserOptions: {
-    ecmaVersion: 12,
-    sourceType: 'module',
-  },
   plugins: [
-    'vue',
   ],
+  // add your custom rules here
   rules: {
     'no-underscore-dangle': 'off',
     'linebreak-style': 'off',
     'import/no-named-as-default': 'off',
-    'import/no-named-as-default-member': 'off',
-  },
-};
+    'import/no-named-as-default-member': 'off'
+  }
+}
