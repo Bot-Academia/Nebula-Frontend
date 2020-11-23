@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Nav />
     <div class="container">
       <Join />
       <Clubs />
@@ -9,13 +8,11 @@
 </template>
 
 <script>
-import Nav from '../components/Basic/Nav.vue'
 import Join from '../components/Basic/Join.vue'
 import Clubs from '../components/Basic/club.vue'
 
 export default {
   components: {
-    Nav,
     Join,
     Clubs
   }
