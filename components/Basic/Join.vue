@@ -19,7 +19,7 @@
           </b-button>
         </b-col>
         <b-col cols="12" sm="12" md="12" lg="6" xl="6">
-          SVG
+          <img src="~/assets/hero-svg.svg" width="400px" height="400px" class="hero-svg" />
         </b-col>
       </b-row>
     </b-container>
@@ -46,5 +46,11 @@
 }
 .content{
     margin-top: 60px;
+}
+@media (max-width: 380px){
+  .hero-svg{
+    width: 250px;
+    height: 250px;
+  }
 }
 </style>

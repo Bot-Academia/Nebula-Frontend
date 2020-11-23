@@ -10,11 +10,15 @@
       <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-nav-item href="#">
-            SignUp
+          <b-nav-item>
+            <nuxt-link to="/signup">
+              Signup
+            </nuxt-link>
           </b-nav-item>
           <b-nav-item href="#">
-            LogIn
+            <nuxt-link to="/login">
+              Login
+            </nuxt-link>
           </b-nav-item>
         </b-navbar-nav>
       </b-collapse>
