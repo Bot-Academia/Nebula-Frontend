@@ -32,11 +32,7 @@ export default {
   },
   methods: {
     async login () {
-      const res = await this.$axios.$post('/user/login', {
-        email: this.user.email,
-        password: this.user.password
-      })
-      console.log(res)
+      const res = await this.$axios.$post('/user/login',this.user)
     }
   }
 }
