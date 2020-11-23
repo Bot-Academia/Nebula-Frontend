@@ -1,0 +1,50 @@
+<template>
+  <div class="join">
+    <b-container>
+      <b-row>
+        <b-col
+          cols="12"
+          sm="12"
+          md="12"
+          lg="6"
+          xl="6"
+          class="content"
+        >
+          <h1 class="slogan">
+            Discover Clubs <br>
+            of your University!
+          </h1>
+          <b-button variant="outline-primary" class="btn">
+            Join Nebula
+          </b-button>
+        </b-col>
+        <b-col cols="12" sm="12" md="12" lg="6" xl="6">
+          SVG
+        </b-col>
+      </b-row>
+    </b-container>
+  </div>
+</template>
+
+<style scoped>
+.slogan{
+    width: 100%;
+    text-align: left;
+    font-size: 6.5vh;
+}
+.join{
+    margin-top: 55px;
+}
+.btn{
+    text-align: left;
+    align-content: start;
+    display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  margin: 25px 0px;
+}
+.content{
+    margin-top: 60px;
+}
+</style>
