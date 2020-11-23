@@ -3,18 +3,18 @@
     <h1><b>Sign Up</b></h1>
     <br>
     <form class="container">
-      <b-form-input placeholder="Name" :type="'text'" :state="null" required />
+      <b-form-input v-model="user.name" placeholder="Name" :type="'text'" :state="null" required />
       <br>
-      <b-form-input placeholder="E-Mail" :type="'email'" :state="null" required />
+      <b-form-input v-model="user.email" placeholder="E-Mail" :type="'email'" :state="null" required />
       <br>
       <b-form-input placeholder="Password" :type="'password'" :state="null" required />
       <br>
-      <b-form-input placeholder="Confirm Password" :type="'password'" :state="null" required />
+      <b-form-input v-model="user.password" placeholder="Confirm Password" :type="'password'" :state="null" required />
       <br>
-      <b-form-input placeholder="Entry No" :type="'text'" :state="null" required />
+      <b-form-input v-model="user.entryno" placeholder="Entry No" :type="'text'" :state="null" required />
       <br>
     </form>
-    <button class="btn btn-success">
+    <button class="btn btn-success" @click="signUp">
       <i class="fa fa-user-plus" aria-hidden="true" /> Sign-Up
     </button>
     <br><br>
@@ -24,7 +24,21 @@
 
 <script>
 export default {
-
+  data () {
+    return {
+      user: {
+        name: '',
+        email: '',
+        password: '',
+        entryno: ''
+      }
+    }
+  },
+  methods: {
+    async signUp () {
+      const res = await this.$axios.$post('/user/signup', this.user)
+    }
+  }
 }
 </script>
 
