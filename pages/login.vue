@@ -30,13 +30,14 @@ export default {
       }
     }
   },
-  methods:{
-      login: async ()=>{
-        const res=await this.$axios.$post('/user/login',{
-            email:this.user.email,
-            password:this.user.password
-        });
-      }
+  methods: {
+    async login () {
+      const res = await this.$axios.$post('/user/login', {
+        email: this.user.email,
+        password: this.user.password
+      })
+      console.log(res)
+    }
   }
 }
 </script>
