@@ -1,43 +1,30 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        Nebula
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+  <div>
+    <Nav />
+    <div class="container">
+      <Join />
+      <Clubs />
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import Nav from '../components/Basic/Nav.vue'
+import Join from '../components/Basic/Join.vue'
+import Clubs from '../components/Basic/club.vue'
+
+export default {
+  components: {
+    Nav,
+    Join,
+    Clubs
+  }
+}
 </script>
 
 <style>
 .container {
   margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
