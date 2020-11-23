@@ -1,9 +1,4 @@
 <template>
-<<<<<<< HEAD
-  <div>
-    <Nav />
-    <Display />
-=======
   <div class="container">
     <div>
       <Logo />
@@ -29,22 +24,10 @@
         </a>
       </div>
     </div>
->>>>>>> 608f0ee... change of ui lib
   </div>
 </template>
 
 <script>
-<<<<<<< HEAD
-import Nav from '../components/Nav.vue'
-import Display from '../components/Display.vue'
-export default {
-  name: 'HomePage',
-
-  components: {
-    Nav,
-    Display
-  }
-=======
 export default {}
 </script>
 
@@ -74,7 +57,6 @@ export default {}
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
->>>>>>> 608f0ee... change of ui lib
 }
 
 .subtitle {

@@ -24,20 +24,10 @@
     "@vue/test-utils": "^1.1.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
-<<<<<<< HEAD
-    "babel-jest": "^26.0.1",
-    "eslint": "^7.13.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-nuxt": "^1.0.0",
-    "eslint-plugin-vue": "^7.1.0",
-    "jest": "^26.0.1",
-=======
     "babel-jest": "^26.5.0",
     "eslint": "^7.10.0",
     "eslint-plugin-nuxt": "^1.0.0",
     "jest": "^26.5.0",
->>>>>>> 608f0ee... change of ui lib
     "vue-jest": "^3.0.4"
   }
 }
