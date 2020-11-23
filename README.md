@@ -1,4 +1,4 @@
-# nebula-frontend
+# Nebula
 
 ## Build Setup
 
