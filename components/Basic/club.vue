@@ -9,6 +9,7 @@
         <b-col
           v-for="club in clubs"
           :key="club.name"
+          class="tag"
           cols="12"
           sm="6"
           md="6"
@@ -30,6 +31,7 @@
   </div>
   </b-row>
   </b-container>
+
   </div>
 </template>
 
@@ -63,9 +65,12 @@ export default {
 
 <style scoped>
 .clubs{
-    margin-top: 25px;
+    margin: 60px 0px 100px 0px;
 }
 .heading{
     text-align: left;
+}
+.tag{
+  margin-top: 25px;
 }
 </style>
