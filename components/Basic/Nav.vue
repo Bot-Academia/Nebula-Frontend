@@ -2,7 +2,9 @@
   <div>
     <b-navbar toggleable="lg" type="dark" variant="info">
       <b-navbar-brand href="#">
-        Nebula
+        <nuxt-link to="/" class="link">
+          Nebula
+        </nuxt-link>
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse" />
@@ -20,6 +22,9 @@
               Login
             </nuxt-link>
           </b-nav-item>
+          <b-nav-item>
+            <b-avatar></b-avatar>
+          </b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -29,5 +34,6 @@
 <style scoped>
 .link{
   color: white;
+  text-decoration: none;
 }
 </style>
