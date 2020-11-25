@@ -19,7 +19,7 @@
           <div>
             <b-card
               overlay
-              :img-src="require('../../assets/' + club.image)"
+              :img-src="require('../../assets/club.png')"
               img-alt="Card Image"
               text-variant="black"
               :title="club.name"
@@ -40,25 +40,15 @@
 export default {
   data () {
     return {
-      clubs: [
-        {
-          image: 'club.png',
-          name: 'CodeClub'
-        },
-        {
-          image: 'club.png',
-          name: 'Music Club'
-        },
-        {
-          image: 'club.png',
-          name: 'Ai Circle'
-        },
-        {
-          image: 'club.png',
-          name: 'Drama Club'
-        }
-      ]
+      clubs: []
     }
+  },
+  created () {
+    this.$axios.$get('/clubs')
+      .then((res) => {
+        this.clubs = res.data
+        console.log(this.clubs)
+      })
   }
 }
 </script>
