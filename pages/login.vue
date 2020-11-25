@@ -32,7 +32,8 @@ export default {
   },
   methods: {
     async login () {
-      const res = await this.$axios.$post('/user/login',this.user)
+      const res = await this.$axios.$post('/user/login', this.user)
+      this.$store.state.user.token = res.token
     }
   }
 }
