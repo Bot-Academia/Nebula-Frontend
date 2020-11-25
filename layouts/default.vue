@@ -2,18 +2,32 @@
   <div>
     <Nav />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 <script>
 import Nav from '../components/Basic/Nav.vue'
+import Footer from '../components/Basic/Footer'
 export default {
   components: {
-    Nav
+    Nav,
+    Footer
   }
 }
 </script>
 <style>
+
+      body {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
 html {
+  scroll-behavior: smooth;
+        min-height: 100%;
+        min-width: 100%;
+        position: relative;
+        max-width: 100%;
   font-family:
     'Source Sans Pro',
     -apple-system,

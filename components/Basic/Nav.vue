@@ -13,13 +13,13 @@
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
           <b-nav-item>
-            <nuxt-link to="/signup" class="link">
-              <b-button>  Signup</b-button>
+            <nuxt-link class="link" to="/signup">
+              Signup
             </nuxt-link>
           </b-nav-item>
-          <b-nav-item href="#">
-            <nuxt-link to="/login" class="link">
-              <b-button> Login </b-button>
+          <b-nav-item>
+            <nuxt-link class="link" to="/login">
+              Login
             </nuxt-link>
           </b-nav-item>
           <b-nav-item>
@@ -30,8 +30,6 @@
     </b-navbar>
   </div>
 </template>
-
-
 
 <style scoped>
 .link{
