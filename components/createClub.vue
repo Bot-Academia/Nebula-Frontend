@@ -63,8 +63,9 @@ export default {
     onSubmit (evt) {
       evt.preventDefault()
       this.$refs['my-modal'].hide()
-      const res = this.$axios.$post('/clubs/', this.form)
-      console.log(res)
+      const res = this.$axios.$post('/clubs/', this.form, {
+        headers: { Authorization: `Bearer ${this.$store.state.user.token}` }
+      })
     }
   }
 }
