@@ -19,7 +19,7 @@
           </b-button>
         </b-col>
         <b-col cols="12" sm="12" md="12" lg="6" xl="6">
-          <img src="~/assets/hero-svg.svg" width="400px" height="400px" class="hero-svg" />
+          <img src="~/assets/hero-svg.svg" width="400px" height="400px" class="hero-svg">
         </b-col>
       </b-row>
     </b-container>

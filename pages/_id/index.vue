@@ -1,23 +1,24 @@
 <template>
   <div>
     <div class="container">
-      <Join />
-      <Create />
-      <Clubs />
+      {{ this.club_data }}
     </div>
   </div>
 </template>
 
 <script>
-import Join from '../components/Basic/Join.vue'
-import Clubs from '../components/Basic/club.vue'
-import Create from '../components/createClub.vue'
-
 export default {
-  components: {
-    Join,
-    Clubs,
-    Create
+  data () {
+    return {
+      club_data: {}
+    }
+  },
+  created () {
+    this.$axios.$get(`/clubs/${this.$route.params.id}`)
+      .then((res) => {
+        this.club_data = res.data
+        console.log(this.club_data)
+      })
   }
 }
 </script>

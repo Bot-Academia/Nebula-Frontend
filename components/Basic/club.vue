@@ -17,13 +17,15 @@
           xl="3"
         >
           <div>
-            <b-card
-              overlay
-              :img-src="require('../../assets/club.png')"
-              img-alt="Card Image"
-              text-variant="black"
-              :title="club.name"
-            />
+            <nuxt-link class="link" :to="'/'+ club._id">
+              <b-card
+                overlay
+                :img-src="require('../../assets/club.png')"
+                img-alt="Card Image"
+                text-variant="black"
+                :title="club.name"
+              />
+            </nuxt-link>
           </div>
         </b-col>
       </b-row>
