@@ -27,7 +27,7 @@
             </b-button>
           </b-nav-item>
           <b-nav-item v-if="$store.state.user.token">
-            <b-avatar :text="$store.state.user.user.name" variant="warning" />
+            <b-avatar :text="$store.state.user.user.name.slice(0,1)" variant="warning" />
           </b-nav-item>
           <b-nav-item v-if="$store.state.user.token">
             <b-button @click="logout">

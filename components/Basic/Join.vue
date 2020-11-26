@@ -14,9 +14,11 @@
             Discover Clubs <br>
             of your University!
           </h1>
-          <b-button variant="outline-primary" class="btn">
-            Join Nebula
-          </b-button>
+          <nuxt-link to="/signup">
+            <b-button variant="outline-primary" class="btn">
+              Join Nebula
+            </b-button>
+          </nuxt-link>
         </b-col>
         <b-col cols="12" sm="12" md="12" lg="6" xl="6">
           <img src="~/assets/hero-svg.svg" width="400px" height="400px" class="hero-svg">
