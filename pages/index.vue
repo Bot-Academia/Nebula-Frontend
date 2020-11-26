@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <Join />
-      <Create />
+      <Create v-if="$store.state.user.token" />
       <Clubs />
     </div>
   </div>
