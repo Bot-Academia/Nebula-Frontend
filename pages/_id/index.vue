@@ -1,7 +1,23 @@
 <template>
   <div>
     <div class="container">
-      {{ this.club_data }}
+      <b-container class="bv-example-row">
+        <b-row>
+          <b-col cols="7">
+            <img src="@/assets/club.png" width="100%" height="300">
+          </b-col>
+          <b-col><h1>{{ club_data.name }}</h1></b-col>
+        </b-row>
+      </b-container>
+      <br>
+      <b-container>
+        <b-row>
+          <b-col cols="7">
+            <h3>Description</h3>
+            {{ club_data.description }}
+          </b-col>
+        </b-row>
+      </b-container>
     </div>
   </div>
 </template>
