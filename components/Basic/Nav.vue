@@ -48,6 +48,8 @@ export default {
     logout: function logout () {
       this.$store.state.user.token = null
       this.$store.state.user.user = null
+      localStorage.removeItem('user')
+      localStorage.removeItem('token')
     }
   }
 }

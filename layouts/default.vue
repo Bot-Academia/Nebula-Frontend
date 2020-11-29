@@ -12,6 +12,13 @@ export default {
   components: {
     Nav,
     Footer
+  },
+  mounted () {
+    const token = localStorage.getItem('token')
+    if (token) {
+      this.$store.state.user.user = JSON.parse(localStorage.getItem('user'))
+      this.$store.state.user.token = localStorage.getItem('token')
+    }
   }
 }
 </script>
