@@ -17,7 +17,7 @@
           xl="3"
         >
           <div>
-            <nuxt-link class="link" :to="'/'+ club._id">
+            <nuxt-link class="link" :to="'/club/'+ club._id">
               <b-card
                 overlay
                 :img-src="require('../../assets/club.png')"
@@ -49,7 +49,6 @@ export default {
     this.$axios.$get('/clubs')
       .then((res) => {
         this.clubs = res.data
-        console.log(this.clubs)
       })
   }
 }
