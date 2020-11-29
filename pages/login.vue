@@ -35,6 +35,9 @@ export default {
       const res = await this.$axios.$post('/user/login', this.user)
       this.$store.state.user.token = res.token
       this.$store.state.user.user = res.user
+      localStorage.setItem('user', JSON.stringify(res.user))
+      localStorage.setItem('token', res.token)
+      // this.localStorage.token=JSON.stringify(this.$store.state.user.token)
       this.$router.push('/')
     }
   }
