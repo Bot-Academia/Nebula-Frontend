@@ -58,11 +58,11 @@
             Members
           </b-nav-item>
 
-          <b-nav-item v-if="selected=='Calendar'" active>
-            Calendar
+          <b-nav-item v-if="selected=='Team'" active>
+            Team
           </b-nav-item>
-          <b-nav-item v-else @click="active('Calendar')">
-            Calendar
+          <b-nav-item v-else @click="active('Team')">
+            Team
           </b-nav-item>
         </b-nav>
       </div>
@@ -79,14 +79,14 @@
 import About from '@/components/club/about.vue'
 import Events from '@/components/club/events.vue'
 import Members from '@/components/club/members.vue'
-import Calendar from '@/components/club/calendar.vue'
+import Team from '@/components/club/team.vue'
 
 export default {
   components: {
     About,
     Events,
     Members,
-    Calendar
+    Team
   },
   data () {
     return {
@@ -105,7 +105,6 @@ export default {
         this.$axios.$get(`/user/${this.club_data.admin}`)
           .then((res) => {
             this.admin = res.data
-            console.log(this.admin)
           })
       })
   },

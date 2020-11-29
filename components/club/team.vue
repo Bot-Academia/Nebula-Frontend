@@ -1,7 +1,7 @@
 <template>
   <div>
     <p>
-      Calendar:
+      Team info:
     </p>
   </div>
 </template>
