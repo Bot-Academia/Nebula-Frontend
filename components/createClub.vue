@@ -16,6 +16,7 @@
                 required
                 placeholder="Enter Club name"
               />
+              <br>
               <b-form-input
                 id="input-2"
                 v-model="form.description"
@@ -23,6 +24,40 @@
                 required
                 placeholder="Enter Club description"
               />
+              <br>
+              <h6>
+                Social Media Details:
+              </h6>
+              <b-form-input
+                id="input-2"
+                v-model="form.ircchannel"
+                type="text"
+                placeholder="Enter Club irc channel details"
+              />
+              <br>
+              <b-form-input
+                id="input-2"
+                v-model="form.instagram"
+                type="text"
+                placeholder="Enter Club instagram username"
+              />
+              <br>
+              <b-form-input
+                id="input-2"
+                v-model="form.facebook"
+                type="text"
+
+                placeholder="Enter Club facebook URL"
+              />
+              <br>
+              <b-form-input
+                id="input-2"
+                v-model="form.website"
+                type="text"
+
+                placeholder="Enter Club website URL"
+              />
+              <br>
             </b-form>
           </div>
           <b-button type="submit" variant="primary" @click="onSubmit">
@@ -43,7 +78,11 @@ export default {
     return {
       form: {
         name: '',
-        description: ''
+        description: '',
+        ircchannel: '',
+        instagram: '',
+        facebook: '',
+        website: ''
       },
       show: true
     }
