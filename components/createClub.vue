@@ -16,6 +16,13 @@
                 required
                 placeholder="Enter Club name"
               />
+              <b-form-input
+                id="input-2"
+                v-model="form.description"
+                type="text"
+                required
+                placeholder="Enter Club description"
+              />
             </b-form>
           </div>
           <b-button type="submit" variant="primary" @click="onSubmit">
@@ -35,7 +42,8 @@ export default {
   data () {
     return {
       form: {
-        name: ''
+        name: '',
+        description: ''
       },
       show: true
     }
