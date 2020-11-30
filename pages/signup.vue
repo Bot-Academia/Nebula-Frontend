@@ -36,7 +36,25 @@ export default {
   },
   methods: {
     async signUp () {
-      const res = await this.$axios.$post('/user/signup', this.user)
+      await this.$axios.$post('/user/signup', this.user).then(
+        (res) => {
+          this.$store.state.user.token = res.token
+          this.$store.state.user.user = res.user
+          this.$axios.setToken(res.token, 'Bearer')
+          localStorage.setItem('user', JSON.stringify(res.user))
+          localStorage.setItem('token', res.token)
+
+          this.$router.push('/')
+        }
+      ).catch((error) => {
+        if (error.response.status) {
+          this.$bvToast.toast(error.response.data.message, {
+            title: 'Error',
+            variant: 'danger',
+            solid: true
+          })
+        }
+      })
     }
   }
 }
