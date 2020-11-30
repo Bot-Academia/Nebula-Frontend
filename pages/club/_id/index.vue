@@ -70,6 +70,7 @@
         :is="selected"
         :description="club_data.description"
         :member="admin.name"
+        :name="club_data.name"
       />
     </div>
   </div>
