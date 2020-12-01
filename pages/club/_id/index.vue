@@ -27,7 +27,7 @@
             <br>
             Admin {{ admin.name }}
           </p>
-          <b-button variant="outline-primary" class="btn">
+          <b-button v-show="show.join" variant="outline-primary" class="btn" @click="join">
             Join {{ club_data.name }} Club
           </b-button>
         </b-col>
@@ -94,10 +94,14 @@ export default {
       club_data: {},
       count: 0,
       admin: '',
-      selected: 'About'
+      selected: 'About',
+      user: this.$store.state.user.user,
+      show: {
+        join: true
+      }
     }
   },
-  created () {
+  mounted () {
     this.$axios.$get(`/clubs/${this.$route.params.id}`)
       .then((res) => {
         this.club_data = res.data
@@ -108,10 +112,35 @@ export default {
             this.admin = res.data
           })
       })
+    if (this.$store.state.user.token) {
+      if (this.club_data.admin === this.user._id || this.club_data.members.includes(this.user._id) || this.club_data.team.includes(this.user._id)) {
+        this.show.join = false
+      }
+    }
   },
   methods: {
     active (current) {
       this.selected = current
+    },
+    join () {
+      if (this.$store.state.user.token) {
+        this.$axios.$put(`/clubs/${this.$route.params.id}`,{data:"data"})
+          .then((res) => {
+            this.club_data = res.data
+            this.count = this.club_data.team.length
+            this.show.join=false
+          }).catch((error) => {
+            if (error.response.status) {
+              this.$bvToast.toast(error.response.data.message, {
+                title: 'Error',
+                variant: 'danger',
+                solid: true
+              })
+            }
+          })
+      } else {
+        this.$router.push('/login')
+      }
     }
   }
 }
