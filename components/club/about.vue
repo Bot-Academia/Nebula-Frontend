@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>
-      About this club
+      About {{ name }} club
     </h1>
     <p>
       {{ description }}
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  props: ['description']
+  props: ['description', 'name']
 }
 </script>
 
