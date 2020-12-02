@@ -1,7 +1,7 @@
 # Nebula-Frontend
 
 ## Project Description
-Nebula(project) is divided into two repositories. This repository contains the frontend codebase of the project. Checkout the backend codebase over [here](https://github.com/CodeChef-SMVDU/Nebula-Backend). This project aims to provide universities and communities with a platform which can be utilised to make the working of various clubs systematic. 
+Nebula(project) is divided into two repositories. This repository contains the frontend codebase of the project. Checkout the backend codebase over [here](https://github.com/Bot-Academia/Nebula-Backend). This project aims to provide universities and communities with a platform which can be utilised to make the working of various clubs systematic. 
 
 ## Installation guide
 The below installation guide is mainly based for windows user but should work for linux based users as well.
@@ -22,11 +22,11 @@ These are the requirement that should be installed locally on your machine.
 
 ### How to set up this project locally?
 
-- Move to: https://github.com/CodeChef-SMVDU/Nebula-Frontend
+- Move to: https://github.com/Bot-Academia/Nebula-Frontend
 - Fork the repo 
 - Clone the repo using: 
 ```sh
-    git clone https://github.com/CodeChef-SMVDU/Nebula-Frontend.git
+    git clone https://github.com/Bot-Academia/Nebula-Frontend.git
 ```
 - Now move to the project directory on your machine.
 ```
