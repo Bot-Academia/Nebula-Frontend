@@ -38,6 +38,7 @@
 </template>
 
 <script>
+import DummyData from '@/assets/DummyData/clubs'
 
 export default {
   data () {
@@ -49,6 +50,9 @@ export default {
     this.$axios.$get('/clubs')
       .then((res) => {
         this.clubs = res.data
+        console.log(this.clubs)
+      }).catch((error) => {
+        this.clubs = DummyData.data
       })
   }
 }

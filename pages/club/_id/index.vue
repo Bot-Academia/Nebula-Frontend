@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main">
     <div class="container top">
       <b-row>
         <b-col
@@ -81,6 +81,8 @@ import About from '@/components/club/about.vue'
 import Events from '@/components/club/events.vue'
 import Members from '@/components/club/members.vue'
 import Team from '@/components/club/team.vue'
+import DummyClubData from '@/assets/DummyData/clubs.js'
+import DummyUserData from '@/assets/DummyData/user.js'
 
 export default {
   components: {
@@ -106,11 +108,14 @@ export default {
       .then((res) => {
         this.club_data = res.data
         this.count = this.club_data.team.length
-        console.log(this.club_data)
+
         this.$axios.$get(`/user/${this.club_data.admin}`)
           .then((res) => {
             this.admin = res.data
           })
+      }).catch((error) => {
+        this.club_data = DummyClubData.data[0]
+        this.admin = DummyUserData
       })
     if (this.$store.state.user.token) {
       if (this.club_data.admin === this.user._id || this.club_data.members.includes(this.user._id) || this.club_data.team.includes(this.user._id)) {
@@ -124,11 +129,11 @@ export default {
     },
     join () {
       if (this.$store.state.user.token) {
-        this.$axios.$put(`/clubs/${this.$route.params.id}`,{data:"data"})
+        this.$axios.$put(`/clubs/${this.$route.params.id}`, { data: 'data' })
           .then((res) => {
             this.club_data = res.data
             this.count = this.club_data.team.length
-            this.show.join=false
+            this.show.join = false
           }).catch((error) => {
             if (error.response.status) {
               this.$bvToast.toast(error.response.data.message, {
@@ -147,8 +152,8 @@ export default {
 </script>
 
 <style scoped>
-.btn{
-
+.main{
+  margin-bottom: 150px;
 }
 p{
   text-align: left;

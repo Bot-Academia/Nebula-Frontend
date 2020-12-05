@@ -13,7 +13,7 @@
       Social Media Links
     </h1>
     <p>
-      {{ description }}
+      Social Media links
     </p>
   </div>
 </template>
