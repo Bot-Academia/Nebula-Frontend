@@ -27,7 +27,7 @@
             <br>
             Admin {{ admin.name }}
           </p>
-          <b-button v-show="show.join" variant="outline-primary" class="btn" @click="join">
+          <b-button v-show="show.join" variant="outline-primary" class="btn show-button" @click="join">
             Join {{ club_data.name }} Club
           </b-button>
         </b-col>
@@ -154,6 +154,11 @@ export default {
 <style scoped>
 .main{
   margin-bottom: 150px;
+}
+.show-button{
+  position: absolute;
+  top: 230px;
+  right: 173px;
 }
 p{
   text-align: left;
