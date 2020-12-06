@@ -1,7 +1,7 @@
 <template>
   <div class="jumbotron container">
     <h1><b>Sign Up</b></h1>
-    <br />
+    <br>
     <form class="container">
       <b-form-input
         v-model="user.name"
@@ -10,7 +10,7 @@
         :state="null"
         required
       />
-      <br />
+      <br>
       <b-form-input
         v-model="user.email"
         placeholder="E-Mail"
@@ -18,14 +18,14 @@
         :state="null"
         required
       />
-      <br />
+      <br>
       <b-form-input
         placeholder="Password"
         :type="'password'"
         :state="null"
         required
       />
-      <br />
+      <br>
       <b-form-input
         v-model="user.password"
         placeholder="Confirm Password"
@@ -33,7 +33,7 @@
         :state="null"
         required
       />
-      <br />
+      <br>
       <b-form-input
         v-model="user.entryno"
         placeholder="Entry No"
@@ -41,53 +41,53 @@
         :state="null"
         required
       />
-      <br />
+      <br>
     </form>
     <button class="btn btn-success" @click="signUp">
       <i class="fa fa-user-plus" aria-hidden="true" /> Sign-Up
     </button>
-    <br /><br />
-    <br /><br />
+    <br><br>
+    <br><br>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       user: {
-        name: "",
-        email: "",
-        password: "",
-        entryno: "",
-      },
-    };
+        name: '',
+        email: '',
+        password: '',
+        entryno: ''
+      }
+    }
   },
   methods: {
-    async signUp() {
+    async signUp () {
       await this.$axios
-        .$post("/user/signup", this.user)
+        .$post('/user/signup', this.user)
         .then((res) => {
-          this.$store.state.user.token = res.token;
-          this.$store.state.user.user = res.user;
-          this.$axios.setToken(res.token, "Bearer");
-          localStorage.setItem("user", JSON.stringify(res.user));
-          localStorage.setItem("token", res.token);
+          this.$store.state.user.token = res.token
+          this.$store.state.user.user = res.user
+          this.$axios.setToken(res.token, 'Bearer')
+          localStorage.setItem('user', JSON.stringify(res.user))
+          localStorage.setItem('token', res.token)
 
-          this.$router.push("/");
+          this.$router.push('/')
         })
         .catch((error) => {
           if (error.response.status) {
             this.$bvToast.toast(error.response.data.message, {
-              title: "Error",
-              variant: "danger",
-              solid: true,
-            });
+              title: 'Error',
+              variant: 'danger',
+              solid: true
+            })
           }
-        });
-    },
-  },
-};
+        })
+    }
+  }
+}
 </script>
 
 <style scoped>
