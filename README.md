@@ -45,7 +45,8 @@ $ npm run dev
 - Now the server is running on PORT 3000
 
 ## Ui/Ux (FrontEnd)
-Most of the prototyping is done using Figma. [link](https://www.figma.com/file/9wqVqlpdi9nx7Ef2u6Kbu5/Untitled?node-id=1%3A2) to Figma project 
+Most of the prototyping is done using Figma. [link](https://www.figma.com/file/9wqVqlpdi9nx7Ef2u6Kbu5/Untitled?node-id=1%3A2) to Figma project.
+Also if you work/Create any ui part then it would be recommended to use ```sh #17a2b8 ``` Css Color Code .
 
 ## Contributing 💻
 We are happy to see you here and we welcome your contributions towards Nebula.
