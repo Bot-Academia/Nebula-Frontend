@@ -205,7 +205,5 @@ img{
 .links {
   padding-top: 15px;
 }
-@media screen {
-  
-}
+
 </style>
