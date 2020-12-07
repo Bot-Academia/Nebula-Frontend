@@ -71,6 +71,7 @@
         :description="club_data.description"
         :member="admin.name"
         :name="club_data.name"
+        :events="events"
       />
     </div>
   </div>
@@ -95,6 +96,7 @@ export default {
     return {
       club_data: {},
       count: 0,
+      events: [],
       admin: '',
       selected: 'About',
       user: this.$store.state.user.user,
@@ -113,9 +115,15 @@ export default {
           .then((res) => {
             this.admin = res.data
           })
+        this.$axios.$get(`/events/${this.$route.params.id}`)
+          .then((res) => {
+            this.events = res.data
+          })
       }).catch((error) => {
         this.club_data = DummyClubData.data[0]
         this.admin = DummyUserData
+        this.events = DummyClubData.data[0].events
+        console.log(this.events)
       })
     if (this.$store.state.user.token) {
       if (this.club_data.admin === this.user._id || this.club_data.members.includes(this.user._id) || this.club_data.team.includes(this.user._id)) {
