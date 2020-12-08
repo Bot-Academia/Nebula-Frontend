@@ -137,7 +137,7 @@ export default {
     },
     join () {
       if (this.$store.state.user.token) {
-        this.$axios.$put(`/clubs/${this.$route.params.id}`, { data: 'data' })
+        this.$axios.$put(`/clubs/join/${this.$route.params.id}`, { data: 'data' })
           .then((res) => {
             this.club_data = res.data
             this.count = this.club_data.team.length
