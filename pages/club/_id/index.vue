@@ -25,7 +25,7 @@
           <p>
             Made on {{ club_data.startDate }}
             <br>
-            Admin {{ admin.name }}
+            Admin {{ club_data.admin }}
           </p>
           <b-button v-show="show.join" variant="outline-primary" class="btn show-button " @click="join">
             Join {{ club_data.name }} Club

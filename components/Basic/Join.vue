@@ -15,7 +15,7 @@
             of your University!
           </h1>
           <nuxt-link to="/signup">
-            <b-button variant="outline-primary" class="btn">
+            <b-button variant="outline-primary" class="btn" v-show="!$store.state.user.token">
               Join Nebula
             </b-button>
           </nuxt-link>
