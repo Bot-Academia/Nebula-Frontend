@@ -103,8 +103,8 @@ export default {
       }
     }
   },
-  mounted () {
-    this.$axios.$get(`/clubs/${this.$route.params.id}`)
+  async mounted () {
+    await this.$axios.$get(`/clubs/${this.$route.params.id}`)
       .then((res) => {
         this.club_data = res.data
         this.count = this.club_data.team.length
