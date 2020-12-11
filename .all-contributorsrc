@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "vinayaksh42",
+      "name": "Vinayak Sharma",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/54861487?v=4",
+      "profile": "https://www.linkedin.com/in/vinayak-sharma-141096193/",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "Nebula-Frontend",
+  "projectOwner": "codewithvk",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
