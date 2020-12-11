@@ -1,4 +1,7 @@
 # Nebula-Frontend
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Project Description
 Nebula(project) is divided into two repositories. This repository contains the frontend codebase of the project. Checkout the backend codebase over [here](https://github.com/Bot-Academia/Nebula-Backend). This project aims to provide universities and communities with a platform which can be utilised to make the working of various clubs systematic. 
@@ -62,3 +65,22 @@ We also have a public chat room on Slack. Drop by and say hello in case you wish
 [![](https://img.shields.io/badge/chat-on_slack-purple.svg?style=for-the-badge&logo=slack)](https://join.slack.com/t/nebulaplatform/shared_invite/zt-jixsfnrq-SdncWSwsWKq9puEXcJgHyQ)
 
 
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://www.linkedin.com/in/vinayak-sharma-141096193/"><img src="https://avatars0.githubusercontent.com/u/54861487?v=4" width="100px;" alt=""/><br /><sub><b>Vinayak Sharma</b></sub></a><br /><a href="https://github.com/codewithvk/Nebula-Frontend/commits?author=vinayaksh42" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
