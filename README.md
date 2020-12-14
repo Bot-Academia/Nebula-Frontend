@@ -1,7 +1,7 @@
 # Nebula-Frontend
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+We also have a public chat room on Slack. Drop by and say hello in case you wish to contribute!
+
+[![](https://img.shields.io/badge/chat-on_slack-purple.svg?style=for-the-badge&logo=slack)](https://join.slack.com/t/nebulaplatform/shared_invite/zt-jixsfnrq-SdncWSwsWKq9puEXcJgHyQ)
 
 ## Project Description
 Nebula(project) is divided into two repositories. This repository contains the frontend codebase of the project. Checkout the backend codebase over [here](https://github.com/Bot-Academia/Nebula-Backend). This project aims to provide universities and communities with a platform which can be utilised to make the working of various clubs systematic. 
@@ -61,8 +61,7 @@ If there's no issue available currently, you can setup the project locally and f
 
 After choosing an issue and doing changes in the code regarding that, you can open up a Pull Request (PR) to main branch to get your work reviewed and merged!<br />
 
-We also have a public chat room on Slack. Drop by and say hello in case you wish to contribute!
-[![](https://img.shields.io/badge/chat-on_slack-purple.svg?style=for-the-badge&logo=slack)](https://join.slack.com/t/nebulaplatform/shared_invite/zt-jixsfnrq-SdncWSwsWKq9puEXcJgHyQ)
+
 
 
 
