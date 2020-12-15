@@ -4,6 +4,13 @@
   ],
   "imageSize": 100,
   "commit": false,
+  "types": {
+    "custom": {
+      "symbol": "🔭",
+      "description": "Code contribution",
+      "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
+    }
+  },
   "contributors": [
     {
       "login": "vinayaksh42",
