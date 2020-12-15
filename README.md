@@ -77,6 +77,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://www.linkedin.com/in/vinayak-sharma-141096193/"><img src="https://avatars0.githubusercontent.com/u/54861487?v=4" width="100px;" alt=""/><br /><sub><b>Vinayak Sharma</b></sub></a><br /><a href="https://github.com/Bot-Academia/Nebula-Frontend/commits?author=vinayaksh42" title="Code">💻</a></td>
     <td align="center"><a href="https://sourcerer.io/codetheorem"><img src="https://avatars3.githubusercontent.com/u/54779517?v=4" width="100px;" alt=""/><br /><sub><b>Hrishikesh Agarwal</b></sub></a><br /><a href="https://github.com/Bot-Academia/Nebula-Frontend/commits?author=codetheorem" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/codewithvk"><img src="https://avatars1.githubusercontent.com/u/61119120?v=4" width="100px;" alt=""/><br /><sub><b>Vivekkumar Javiya</b></sub></a><br /><a href="https://github.com/Bot-Academia/Nebula-Frontend/commits?author=codewithvk" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Godzilla5111"><img src="https://avatars2.githubusercontent.com/u/62075225?v=4" width="100px;" alt=""/><br /><sub><b>Anurag Singh</b></sub></a><br /><a href="https://github.com/Bot-Academia/Nebula-Frontend/commits?author=Godzilla5111" title="Code">💻</a></td>
   </tr>
 </table>
 
