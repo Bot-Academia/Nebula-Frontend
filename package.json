@@ -12,10 +12,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.13.0",
+    "@nuxtjs/axios": "^5.13.1",
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
-    "core-js": "^3.8.3",
+    "core-js": "^3.10.0",
     "nuxt": "^2.15.4"
   },
   "devDependencies": {
@@ -25,7 +25,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.5.0",
-    "eslint": "^7.19.0",
+    "eslint": "^7.23.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-only-warn": "^1.0.2",
     "jest": "^26.5.0",
