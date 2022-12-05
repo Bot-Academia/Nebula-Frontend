@@ -27,7 +27,7 @@
     "babel-jest": "^26.5.0",
     "eslint": "^7.23.0",
     "eslint-plugin-nuxt": "^2.0.0",
-    "eslint-plugin-only-warn": "^1.0.3",
+    "eslint-plugin-only-warn": "^1.1.0",
     "jest": "^26.5.0",
     "vue-jest": "^3.0.4"
   }
